@@ -1,0 +1,32 @@
+dist: trusty
+sudo: false
+
+addons:
+  apt:
+    packages:
+    - sshpass
+    - graphviz
+
+language: go
+
+matrix:
+  include:
+  - go: "1.11"
+
+before_install:
+- git config --global url."git@github.com:".insteadOf "https://github.com/"
+
+install:
+- go get -u github.com/vikebot/goviz
+- export GO111MODULE=on
+- go mod download
+
+before_script:
+- set -o pipefail
+
+script:
+- go test -v -cover -covermode atomic 2>&1 | tee -a _coverage.afy
+
+after_success:
+- chmod +x scripts/commit.sh
+- "./scripts/commit.sh"
