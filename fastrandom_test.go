@@ -8,9 +8,9 @@ func TestFastRandomString(t *testing.T) {
 		arg  int
 	}{
 		{"Zero", 0},
-		{"Small", 10},
-		{"Large", 10000000},
-		{"Very large", 1000000000},
+		{"Small", 100},
+		{"Large", 10000},
+		{"Very large", 1000000},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

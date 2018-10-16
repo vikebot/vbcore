@@ -20,7 +20,7 @@ before_script:
 - set -o pipefail
 
 script:
-- go test -v -cover -covermode atomic -race -coverprofile=coverage.txt
+- go test -v -cover -covermode atomic -timeout 20m -race -coverprofile=coverage.txt
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
