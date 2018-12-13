@@ -1,5 +1,7 @@
 package vbcore
 
+import "image/color"
+
 const (
 	// BlockWater represents the block water and is accessable by a player but
 	// the player gets damage
@@ -30,4 +32,19 @@ const (
 	BlockLightMountainSeed = 0.7
 	// BlockMountainSeed was used to be snow
 	BlockMountainSeed = 0.95
+)
+
+var (
+	// BlockWaterClr is the color in rgb for water
+	BlockWaterClr = color.RGBA{62, 96, 193, 0}
+	// BlockLightDirtClr is the color in rgb for lightdirt
+	BlockLightDirtClr = color.RGBA{93, 128, 253, 0}
+	// BlockGrassClr is the color in rgb for grass
+	BlockGrassClr = color.RGBA{116, 169, 99, 0}
+	// BlockTreeClr is the color in rgb for a tree
+	BlockTreeClr = color.RGBA{62, 126, 98, 0}
+	// BlockLightMountainClr is the color in rgb for a mountain
+	BlockLightMountainClr = color.RGBA{130, 132, 128, 0}
+	// BlockMountainClr is the color in rgb for a mountain (snow)
+	BlockMountainClr = color.RGBA{210, 210, 215, 0}
 )
