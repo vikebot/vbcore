@@ -22,8 +22,8 @@ const (
 	BlockWaterSeed = 0.05
 	// BlockLightDirtSeed was used to be Beach
 	BlockLightDirtSeed = 0.15
-	// BlockGrasslandSeed is the seed for grass
-	BlockGrasslandSeed = 0.2
+	// BlockGrassSeed is the seed for grass
+	BlockGrassSeed = 0.2
 	// BlockTreeSeed was used to be forest
 	BlockTreeSeed = 0.6
 	// BlockLightMountainSeed is the seed for mountain
