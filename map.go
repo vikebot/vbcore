@@ -18,6 +18,21 @@ const (
 	// palyer
 	BlockMountain = "mountain"
 
+	// BlockWaterIsAccessable describes if a block can be accessed by a player
+	BlockWaterIsAccessable = true
+	// BlockLightDirtIsAccessable describes if a block can be accessed by a
+	// player
+	BlockLightDirtIsAccessable = true
+	// BlockGrassIsAccessable describes if a block can be accessed by a player
+	BlockGrassIsAccessable = true
+	// BlockTreeIsAccessable describes if a block can be accessed by a player
+	BlockTreeIsAccessable = true
+	// BlockLightMountainIsAccessable describes if a block can be accessed by
+	// a player
+	BlockLightMountainIsAccessable = true
+	// BlockMountainIsAccessable describes if a block can be accessed by a player
+	BlockMountainIsAccessable = false
+
 	//Map generation seeds
 
 	// BlockWaterSeed is the seed for water
