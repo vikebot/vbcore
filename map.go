@@ -18,6 +18,10 @@ const (
 	// palyer
 	BlockMountain = "mountain"
 
+	// BlockEndOfMap represents the block endofmap which appears for blocks
+	// that are not on the map
+	BlockEndOfMap = "endofmap"
+
 	// BlockWaterIsAccessable describes if a block can be accessed by a player
 	BlockWaterIsAccessable = true
 	// BlockLightDirtIsAccessable describes if a block can be accessed by a
