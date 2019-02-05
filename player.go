@@ -10,6 +10,7 @@ type Player struct {
 // PlayerInfo is a Player with more information
 type PlayerInfo struct {
 	UserID     string `json:"userID"`
+	Name       string `json:"name"`
 	Username   string `json:"username"`
 	Picture    string `json:"picture"`
 	Permission string `json:"permission"`
